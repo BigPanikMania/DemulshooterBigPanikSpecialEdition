@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D99B7B7F-8B86-4AA0-A6F8-62A81F603599}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DemulShooter</RootNamespace>
+    <AssemblyName>DemulShooter</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DemulShooter_Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Games\Game_CoastalWws.cs" />
+    <Compile Include="Games\Game_Lindbergh2spicy.cs" />
+    <Compile Include="Games\Game_LindberghLgjsp.cs" />
+    <Compile Include="Games\Game_RtAliensArmageddon.cs" />
+    <Compile Include="Games\Game_RtTerminatorSalvation.cs" />
+    <Compile Include="Games\Game_WndFriction.cs" />
+    <Compile Include="Games\Game_Model2Vcop.cs" />
+    <Compile Include="Games\Game_Model2Hotd.cs" />
+    <Compile Include="Games\Game_Model2Gunblade.cs" />
+    <Compile Include="Games\Game_Model2Vcop2.cs" />
+    <Compile Include="Games\Game_Model2Bel.cs" />
+    <Compile Include="Games\Game_Model2Rchase2.cs" />
+    <Compile Include="Games\Game.cs" />
+    <Compile Include="Games\Game_WndArtIsDead.cs" />
+    <Compile Include="Games\Game_WndBE.cs" />
+    <Compile Include="Games\Game_CxbxVcop3.cs" />
+    <Compile Include="Games\Game_Demul.cs" />
+    <Compile Include="Games\Game_DemulAtomiswave.cs" />
+    <Compile Include="Games\Game_DemulHikaru.cs" />
+    <Compile Include="Games\Game_DemulJvs.cs" />
+    <Compile Include="Games\Game_DemulManicpnc.cs" />
+    <Compile Include="Games\Game_DemulNaomi.cs" />
+    <Compile Include="Games\Game_Dolphin4.cs" />
+    <Compile Include="Games\Game_Dolphin5.cs" />
+    <Compile Include="Games\Game_GvrAliens.cs" />
+    <Compile Include="Games\Game_GvrAliensHasp.cs" />
+    <Compile Include="Games\Game_GvrFarCryV2.cs" />
+    <Compile Include="Games\Game_GvrFearLand.cs" />
+    <Compile Include="Games\Game_WndHeavyFire3Pc.cs" />
+    <Compile Include="Games\Game_WndHeavyFire4Pc.cs" />
+    <Compile Include="Games\Game_WndHod2pc.cs" />
+    <Compile Include="Games\Game_WndHod3pc.cs" />
+    <Compile Include="Games\Game_WndHotdoPc.cs" />
+    <Compile Include="Games\Game_LindberghHotd4.cs" />
+    <Compile Include="Games\Game_LindberghLgj.cs" />
+    <Compile Include="Games\Game_LindberghRambo.cs" />
+    <Compile Include="Games\Game_WndProjectGreenBeat.cs" />
+    <Compile Include="Games\Game_WndReload.cs" />
+    <Compile Include="Games\Game_RwLGI.cs" />
+    <Compile Include="Games\Game_RwLGI3D.cs" />
+    <Compile Include="Games\Game_RwOpGhost.cs" />
+    <Compile Include="Games\Game_RwSDR.cs" />
+    <Compile Include="Games\Game_RwSGG.cs" />
+    <Compile Include="Games\Game_RwTransformers.cs" />
+    <Compile Include="Games\Game_TtxEadp.cs" />
+    <Compile Include="Games\Game_TtxGaiaAttack4.cs" />
+    <Compile Include="Games\Game_TtxGundam.cs" />
+    <Compile Include="Games\Game_TtxGungun2.cs" />
+    <Compile Include="Games\Game_TtxHauntedMuseum.cs" />
+    <Compile Include="Games\Game_TtxHauntedMuseum2.cs" />
+    <Compile Include="Games\Game_TtxSha.cs" />
+    <Compile Include="Games\Game_WndWartran.cs" />
+    <Compile Include="Games\Game_TtxBlockKingBallShooter.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="DemulShooterWindow.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DsCore\DsCore.csproj">
+      <Project>{BD88CC4D-2944-43F8-85C3-A274A45487AF}</Project>
+      <Name>DsCore</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DemulShooter_Icon.ico" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\x360kb_hfirea1p.ini" />
+    <None Include="Resources\x360kb_hfirea2p.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DemulShooter_Hooked_Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DemulShooter_UnHooked_Icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <Target Name="Date" BeforeTargets="BeforeBuild">
+    <WriteLinesToFile File="$(IntermediateOutputPath)gen.cs" Lines="static partial class Builtin { public static long CompileTime = $([System.DateTime]::UtcNow.Ticks) %3B }" Overwrite="true" />
+    <ItemGroup>
+      <Compile Include="$(IntermediateOutputPath)gen.cs" />
+    </ItemGroup>
+  </Target>
+</Project>
